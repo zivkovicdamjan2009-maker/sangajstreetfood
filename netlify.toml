@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+
+# Forma "kuvanje-na-gajbi" se automatski prepoznaje (Netlify Forms).
+# Uključi: Site configuration → Forms → Form detection → Enable.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

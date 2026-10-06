@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Šangaj Street Food | Inđija</title>
+<meta name="description" content="Šangaj Street Food, Inđija. Burgeri, sendviči, ćevapi i dostava na teritoriji Inđije. Kralja Petra I Karađorđevića 4. 062 830 3866.">
+<meta property="og:title" content="Šangaj Street Food | Inđija">
+<meta property="og:description" content="Klopa bez filozofiranja. Dostava samo u Inđiji.">
+<meta property="og:image" content="assets/hero-banner.jpg">
+<meta name="theme-color" content="#0B0A0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=Caveat+Brush&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="pre-glow"></div>
+  <span class="pre-mark">
+    <span class="pre-word">Šangaj</span>
+    <span class="pre-sub">Street Food</span>
+  </span>
+  <span class="pre-bar"><span></span></span>
+</div>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand">
+      <span class="brand-word">Šangaj</span>
+      <span class="brand-sub">Street Food</span>
+    </span>
+    <button type="button" class="drawer-close" id="drawerClose" aria-label="Zatvori">×</button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="#meni" class="yellow">Meni</a>
+    <a href="#baza">Baza</a>
+    <a href="#novi-sad">Novi Sad</a>
+    <a href="kuvanje-na-gajbi/index.html">Kuvanje na gajbi</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="btn-primary drawer-cta" href="tel:+381628303866">Pozovi · 062 830 3866</a>
+</div>
+
+<section id="pocetna" class="hero">
+  <div class="hero-grid">
+    <div class="hero-video">
+      <video id="heroVideo" src="assets/hero-loop.mp4" muted loop autoplay playsinline preload="auto" poster="assets/hero-banner.jpg"></video>
+      <div class="scrim"></div>
+      <div class="glow"></div>
+      <div class="hero-top">
+        <span class="brand fade-1">
+          <span class="brand-word">Šangaj</span>
+          <span class="brand-sub">Street Food</span>
+        </span>
+        <button type="button" class="burger" id="burger" aria-label="Meni"><span></span><span></span><span></span></button>
+      </div>
+      <div class="hero-copy">
+        <span class="kicker hero-kicker">Inđija · street food · dostava</span>
+        <h1><span class="l1">Ovde se</span><span class="l2">ne glumi.</span></h1>
+        <p class="hero-lead">Klopa bez filozofiranja. Kućica, roštilj, ekipa i auto koji zna svaku ulicu u Inđiji.</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="tel:+381628303866">Poruči telefonom</a>
+          <span class="live"><span class="dot"></span>Dostava samo u Inđiji</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-tiles">
+      <a href="#meni" class="tile tile-meni">
+        <div class="tile-bg grad"></div><div class="tile-scrim soft"></div>
+        <div class="tile-row"><span><span class="tile-title yellow">Meni</span><span class="tile-sub light">Šta danas ide iz kućice</span></span><span class="arrow">→</span></div>
+      </a>
+      <a href="kuvanje-na-gajbi/index.html" class="tile tile-galerija tile-gajba">
+        <div class="tile-bg"><div class="img-ph fill"><span class="img-ph-label top">Slika · klijent treba da pošalje</span></div></div><div class="tile-scrim"></div>
+        <div class="tile-row"><span><span class="tile-title">Kuvanje na gajbi</span><span class="tile-sub">Dolazimo kod tebe i kuvamo na licu mesta.</span></span><span class="arrow">→</span></div>
+      </a>
+      <a href="#kontakt" class="tile tile-kontakt">
+        <div class="tile-bg kucica"></div><div class="tile-scrim"></div>
+        <div class="tile-row"><span><span class="tile-title">Kontakt</span><span class="tile-sub">Kralja Petra I Karađorđevića 4</span></span><span class="arrow">→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="statusbar" id="statusbar">
+  <div class="status-row"><span class="status-dot" id="statusDot"></span><span class="status-label" id="statusLabel">Sada otvoreno</span></div>
+  <div class="marquee-wrap"><div class="marquee" id="marquee"><span></span><span></span></div></div>
+</div>
+
+<section id="meni" class="section">
+  <div class="section-head">
+    <h2 data-reveal>Meni</h2>
+  </div>
+  <div class="tabs">
+    <button type="button" class="tab is-active" data-tab="klopa">Klopa</button>
+    <button type="button" class="tab" data-tab="sosevi">Sosevi i dodaci</button>
+    <button type="button" class="tab" data-tab="pice">Piće</button>
+  </div>
+  <div class="cards" id="panel-klopa">
+      <article class="card" data-reveal>
+        <div class="ph"><img src="assets/food/sangaj-specijal.jpg" alt="Šangaj specijal" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Šangaj specijal</h3>
+          <p>Promenjivi specijalitet koji osvežavamo svakog meseca.</p>
+          <div class="card-foot"><span class="price">690 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="ph-note">assets/food/02.jpg</span></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Kobasica sa sirom</h3>
+          <p>Pavlaka, honey mustard, čips od crnog luka, kiseli krastavci, u kifli.</p>
+          <div class="card-foot"><span class="price">530 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><img src="assets/food/hrskava-piletina.jpg" alt="Hrskava piletina" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Hrskava piletina</h3>
+          <p>Pileći file u karici od kornfleksa, semenki bundeve, oraha i crnog susama, ajoli sa crnim maslinama, zeleni miks, čeri, rozi sos, u tortilji ili kifli.</p>
+          <div class="card-foot"><span class="price">550 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><img src="assets/food/gurmanski-sis.jpg" alt="Gurmanski šiš na kajmaku" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Gurmanski šiš na kajmaku</h3>
+          <p>Od junećeg i svinjskog vrata, salata od crvenog luka, paradajza i peršuna, topljeni sir, u lepinji.</p>
+          <div class="card-foot"><span class="price">690 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><img src="assets/food/smash-burger.jpg" alt="Juneći smash burger (double/triple)" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Juneći smash burger (double/triple)</h3>
+          <p>Mleveni juneći vrat, slanina, zelena salata, čedar, džem od luka, čeri, kiseli krastavac, burger sos, u zemički, sa pomfritom.</p>
+          <div class="card-foot"><span class="price">750 / 950 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><img src="assets/food/cepkano-prase.jpg" alt="Cepkano prase" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Cepkano prase</h3>
+          <p>Cepkana plećka u domaćem BBQ sosu, honey mustard sos, kiseli krastavac, ukiseljeni crveni luk, topljeni sir, u tostiranoj kifli.</p>
+          <div class="card-foot"><span class="price">640 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="ph-note">assets/food/07.jpg</span></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Juneći ćevapi na kajmaku</h3>
+          <p>10 ćevapa, šumadijski kajmak, crveni luk, tucana ljuta, u somunu.</p>
+          <div class="card-foot"><span class="price">690 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="ph-note">assets/food/08.jpg</span></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Pileća kesadilja</h3>
+          <p>Marinirani pileći file, Gauda, kukuruz šećerac, halapenjo majonez, u zapečenoj tortilji.</p>
+          <div class="card-foot"><span class="price">460 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="ph-note">assets/food/09.jpg</span></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Burito sa šampinjonima (posno)</h3>
+          <p>Namaz od krompira i kiselog krastavca, zeleni miks, kukuruz šećerac, grilovane pečurke, biljni sir, u tortilji.</p>
+          <div class="card-foot"><span class="price">390 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="ph-note">assets/food/10.jpg</span></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Klasični šangajac</h3>
+          <p>Sendvič u kifli, pavlaka, rozi sos, zeleni miks, čeri, pečenica, topljeni sir, topljeni čedar, kiseli krastavci.</p>
+          <div class="card-foot"><span class="price">430 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="ph-note">assets/food/11.jpg</span></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Chicken royal</h3>
+          <p>Marinirani pileći file sa pečurkama i slaninom, kačkavalj, čedar, honey mustard sos, zeleni miks, čeri, rozi sos, tortilja ili kifla.</p>
+          <div class="card-foot"><span class="price">690 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="ph-note">assets/food/12.jpg</span></div>
+        <div class="card-body">
+          <span class="kicker cyan">Klopa</span>
+          <h3>Cezar salata</h3>
+          <p>Marinirani pileći file, slanina, zelena salata, čeri, brusketi, cezar dresing, parmezan.</p>
+          <div class="card-foot"><span class="price">580 din</span><a class="btn-small" href="#kontakt">Poruči</a></div>
+        </div>
+      </article>
+  </div>
+  <div class="sauces" id="panel-sosevi" hidden>
+        <div class="sauce"><span><span class="sauce-name">Pomfrit</span> <span class="sauce-note">200 g</span></span><span class="sauce-price">180</span></div>
+        <div class="sauce"><span><span class="sauce-name">Burger sos</span></span><span class="sauce-price">80</span></div>
+        <div class="sauce"><span><span class="sauce-name">Honey mustard sos</span></span><span class="sauce-price">80</span></div>
+        <div class="sauce"><span><span class="sauce-name">Rozi sos</span></span><span class="sauce-price">80</span></div>
+        <div class="sauce"><span><span class="sauce-name">Ajoli sa crnim maslinama</span></span><span class="sauce-price">80</span></div>
+        <div class="sauce"><span><span class="sauce-name">Halapenjo majonez</span></span><span class="sauce-price">80</span></div>
+        <div class="sauce"><span><span class="sauce-name">Ljuti sos</span></span><span class="sauce-price">80</span></div>
+        <div class="sauce"><span><span class="sauce-name">Topljeni čedar</span></span><span class="sauce-price">80</span></div>
+        <div class="sauce"><span><span class="sauce-name">Cezar dresing</span></span><span class="sauce-price">80</span></div>
+        <div class="sauce"><span><span class="sauce-name">Dodatak sir</span></span><span class="sauce-price">80</span></div>
+    <span class="sauce-foot">Svi sosevi 50 ml</span>
+  </div>
+  <div class="sauces" id="panel-pice" hidden>
+    <div class="sauce"><span><span class="sauce-name">Espresso</span></span><span class="sauce-price">120</span></div>
+    <div class="sauce"><span><span class="sauce-name">Espresso sa mlekom</span></span><span class="sauce-price">120</span></div>
+    <div class="sauce"><span><span class="sauce-name">Produženi espresso</span></span><span class="sauce-price">120</span></div>
+    <div class="sauce"><span><span class="sauce-name">Dupli espresso</span></span><span class="sauce-price">240</span></div>
+    <div class="sauce"><span><span class="sauce-name">Coca-Cola</span> <span class="sauce-note">0,33 l</span></span><span class="sauce-price">140</span></div>
+    <div class="sauce"><span><span class="sauce-name">Fanta</span> <span class="sauce-note">0,33 l</span></span><span class="sauce-price">140</span></div>
+    <div class="sauce"><span><span class="sauce-name">Sprite</span> <span class="sauce-note">0,33 l</span></span><span class="sauce-price">140</span></div>
+    <div class="sauce"><span><span class="sauce-name">Fuze Tea</span></span><span class="sauce-price">140</span></div>
+    <div class="sauce"><span><span class="sauce-name">Joy multivitamin</span></span><span class="sauce-price">140</span></div>
+    <div class="sauce"><span><span class="sauce-name">Heineken</span> <span class="sauce-note">0,33 l</span></span><span class="sauce-price">180</span></div>
+    <div class="sauce"><span><span class="sauce-name">Rosa</span> <span class="sauce-note">0,5 l</span></span><span class="sauce-price">100</span></div>
+    <div class="sauce"><span><span class="sauce-name">Rosa gazirana</span></span><span class="sauce-price">100</span></div>
+    <span class="sauce-foot">Cene su u dinarima</span>
+  </div>
+</section>
+
+<section id="baza" class="baza">
+  <div class="baza-bg"></div><div class="baza-scrim"></div>
+  <div class="baza-copy">
+    <span class="script pink">naša baza</span>
+    <h2 data-reveal>Ovde se prave<br>majstorije.</h2>
+    <p>Kućica u Kralja Petra I Karađorđevića 4. Palme na fasadi, dim iznad roštilja, red pred prozorom. Nema kuhinje u pozadini, sve se dešava pred tobom.</p>
+    <a class="btn-outline" href="#kontakt">Nađi nas</a>
+  </div>
+</section>
+
+<section id="novi-sad" class="section ns">
+  <div class="ns-glow"></div>
+  <div class="ns-grid">
+    <div class="img-ph ns-img" data-reveal>
+      
+      <span class="img-ph-label">Slika lokala<br>klijent treba da pošalje</span>
+    </div>
+    <div class="ns-copy">
+      <span class="script pink">uskoro</span>
+      <h2 data-reveal>Novi Sad,<br>stižemo.</h2>
+      <p>Šangaj pakuje roštilj i kreće put Novog Sada. Nova lokacija, ista klopa. Pravi street food bez filozofiranja, sad na još jednom mestu.</p>
+      <div class="ns-facts">
+        <div class="field"><span class="kicker cyan">Adresa</span><span class="ph-text">klijent treba da pošalje</span></div>
+        <div class="field"><span class="kicker cyan">Datum otvaranja</span><span class="ph-text">klijent treba da pošalje</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="social">
+  <div class="social-left">
+    <span class="kicker cyan">Prati nas</span>
+    <a class="social-handle" href="https://instagram.com/sangajstreetfood" target="_blank" rel="noopener">@sangajstreetfood</a>
+  </div>
+  <div class="social-icons">
+    <a class="icon icon-ig" href="https://instagram.com/sangajstreetfood" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"></circle></svg></a>
+    <a class="icon icon-tt" href="https://www.tiktok.com/@sangaj.street.food" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.1v13.2a2.6 2.6 0 1 1-2.6-2.6c.27 0 .53.04.78.12V9.5a5.9 5.9 0 0 0-.78-.05A5.75 5.75 0 1 0 16.6 15.2V8.4a6.7 6.7 0 0 0 4.1 1.38V6.62a3.9 3.9 0 0 1-2.9-1.3A4.1 4.1 0 0 1 16.6 2z"></path></svg></a>
+    <a class="icon icon-gajba" href="https://www.instagram.com/kuvanjenagajbi/" target="_blank" rel="noopener" aria-label="Kuvanje na gajbi, Instagram" title="Kuvanje na gajbi, Instagram"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"></circle></svg><span class="icon-tag">na gajbi</span></a>
+  </div>
+</section>
+
+<section id="kontakt" class="section kontakt">
+  <div class="kontakt-grid">
+    <div class="kontakt-info">
+      <h2 data-reveal>Znaš gde smo</h2>
+      <div class="field"><span class="kicker cyan">Adresa</span><span class="addr">Kralja Petra I Karađorđevića 4, Inđija</span></div>
+      <div class="field"><span class="kicker cyan">Telefon</span><a class="phone" href="tel:+381628303866">+381 62 830 3866</a></div>
+      <div class="field">
+        <span class="kicker cyan">Radno vreme</span>
+        <div class="hours"><span>Pon – čet</span><span>09:00 – 23:00</span></div>
+        <div class="hours"><span>Pet – sub</span><span>09:00 – 00:00</span></div>
+        <div class="hours"><span>Nedelja</span><span>16:00 – 23:00</span></div>
+      </div>
+      <div class="badge">Dostava samo u Inđiji</div>
+    </div>
+    <div class="kontakt-map">
+      <div class="map-frame">
+        <iframe title="Šangaj Street Food, Google mapa" src="https://www.google.com/maps?q=Kralja+Petra+I+Kara%C4%91or%C4%91evi%C4%87a+4,+In%C4%91ija&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a class="btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Kralja+Petra+I+Kara%C4%91or%C4%91evi%C4%87a+4,+In%C4%91ija" target="_blank" rel="noopener">Otvori u Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-banner"><div class="footer-banner-scrim"></div></div>
+  <div class="footer-body">
+    <div class="footer-cols">
+      <div class="fcol"><span class="kicker yellow">Baza</span><span>Kralja Petra I Karađorđevića 4</span><span>Inđija</span></div>
+      <div class="fcol"><span class="kicker yellow">Poruči</span><a href="tel:+381628303866">+381 62 830 3866</a><span>Dostava samo u Inđiji</span></div>
+      <div class="fcol"><span class="kicker yellow">Radno vreme</span><span>Pon – čet · 09:00 – 23:00</span><span>Pet – sub · 09:00 – 00:00</span><span>Nedelja · 16:00 – 23:00</span></div>
+      <div class="fcol">
+        <span class="kicker yellow">Prati</span>
+        <div class="footer-icons">
+          <a class="icon icon-ig small" href="https://instagram.com/sangajstreetfood" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"></circle></svg></a>
+          <a class="icon icon-tt small" href="https://www.tiktok.com/@sangaj.street.food" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.1v13.2a2.6 2.6 0 1 1-2.6-2.6c.27 0 .53.04.78.12V9.5a5.9 5.9 0 0 0-.78-.05A5.75 5.75 0 1 0 16.6 15.2V8.4a6.7 6.7 0 0 0 4.1 1.38V6.62a3.9 3.9 0 0 1-2.9-1.3A4.1 4.1 0 0 1 16.6 2z"></path></svg></a>
+        </div>
+        <a class="btn-outline tiny" href="#pocetna">Na početak</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span class="script yellow">vidimo se</span><span class="copy">© 2026 Šangaj Street Food · Inđija</span></div>
+  </div>
+</footer>
+
+<a class="m-order" id="mOrder" href="tel:+381628303866" aria-hidden="true" tabindex="-1"><span>Poruči</span><span class="m-order-num">062 830 3866</span></a>
+
+<script src="script.js"></script>
+</body>
+</html>
