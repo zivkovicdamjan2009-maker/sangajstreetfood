@@ -73,7 +73,7 @@
         <div class="tile-row"><span><span class="tile-title yellow">Meni</span><span class="tile-sub light">Šta danas ide iz kućice</span></span><span class="arrow">→</span></div>
       </a>
       <a href="kuvanje-na-gajbi/index.html" class="tile tile-galerija tile-gajba">
-        <div class="tile-bg"><div class="img-ph fill"><span class="img-ph-label top">Slika · klijent treba da pošalje</span></div></div><div class="tile-scrim"></div>
+        <div class="tile-bg gajba-logo"></div><div class="tile-scrim"></div>
         <div class="tile-row"><span><span class="tile-title">Kuvanje na gajbi</span><span class="tile-sub">Dolazimo kod tebe i kuvamo na licu mesta.</span></span><span class="arrow">→</span></div>
       </a>
       <a href="#kontakt" class="tile tile-kontakt">
@@ -93,12 +93,12 @@
   <div class="section-head">
     <h2 data-reveal>Meni</h2>
   </div>
-  <div class="tabs">
-    <button type="button" class="tab is-active" data-tab="klopa">Klopa</button>
-    <button type="button" class="tab" data-tab="sosevi">Sosevi i dodaci</button>
-    <button type="button" class="tab" data-tab="pice">Piće</button>
+  <div class="tabs" role="tablist" aria-label="Meni">
+    <button type="button" class="tab is-active" data-tab="klopa" role="tab" aria-selected="true" aria-controls="panel-klopa">Klopa</button>
+    <button type="button" class="tab" data-tab="sosevi" role="tab" aria-selected="false" aria-controls="panel-sosevi">Sosevi i dodaci</button>
+    <button type="button" class="tab" data-tab="pice" role="tab" aria-selected="false" aria-controls="panel-pice">Piće</button>
   </div>
-  <div class="cards" id="panel-klopa">
+  <div class="cards" id="panel-klopa" role="tabpanel">
       <article class="card" data-reveal>
         <div class="ph"><img src="assets/food/sangaj-specijal.jpg" alt="Šangaj specijal" loading="lazy" onerror="this.remove()"></div>
         <div class="card-body">
@@ -208,7 +208,7 @@
         </div>
       </article>
   </div>
-  <div class="sauces" id="panel-sosevi" hidden>
+  <div class="sauces" id="panel-sosevi" role="tabpanel" hidden>
         <div class="sauce"><span><span class="sauce-name">Pomfrit</span> <span class="sauce-note">200 g</span></span><span class="sauce-price">180</span></div>
         <div class="sauce"><span><span class="sauce-name">Burger sos</span></span><span class="sauce-price">80</span></div>
         <div class="sauce"><span><span class="sauce-name">Honey mustard sos</span></span><span class="sauce-price">80</span></div>
@@ -221,7 +221,7 @@
         <div class="sauce"><span><span class="sauce-name">Dodatak sir</span></span><span class="sauce-price">80</span></div>
     <span class="sauce-foot">Svi sosevi 50 ml</span>
   </div>
-  <div class="sauces" id="panel-pice" hidden>
+  <div class="sauces" id="panel-pice" role="tabpanel" hidden>
     <div class="sauce"><span><span class="sauce-name">Espresso</span></span><span class="sauce-price">120</span></div>
     <div class="sauce"><span><span class="sauce-name">Espresso sa mlekom</span></span><span class="sauce-price">120</span></div>
     <div class="sauce"><span><span class="sauce-name">Produženi espresso</span></span><span class="sauce-price">120</span></div>
@@ -276,6 +276,23 @@
     <a class="icon icon-ig" href="https://instagram.com/sangajstreetfood" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"></circle></svg></a>
     <a class="icon icon-tt" href="https://www.tiktok.com/@sangaj.street.food" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.1v13.2a2.6 2.6 0 1 1-2.6-2.6c.27 0 .53.04.78.12V9.5a5.9 5.9 0 0 0-.78-.05A5.75 5.75 0 1 0 16.6 15.2V8.4a6.7 6.7 0 0 0 4.1 1.38V6.62a3.9 3.9 0 0 1-2.9-1.3A4.1 4.1 0 0 1 16.6 2z"></path></svg></a>
     <a class="icon icon-gajba" href="https://www.instagram.com/kuvanjenagajbi/" target="_blank" rel="noopener" aria-label="Kuvanje na gajbi, Instagram" title="Kuvanje na gajbi, Instagram"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"></circle></svg><span class="icon-tag">na gajbi</span></a>
+  </div>
+</section>
+
+<section id="na-gajbi" class="gajba-promo">
+  <div class="gp-grid">
+    <div class="gp-copy">
+      <span class="gp-kicker" data-reveal>Nova usluga · by Šangaj</span>
+      <h2 data-reveal>Kuvanje<br><span>na gajbi.</span></h2>
+      <p data-reveal>Ne moraš ti kod nas. Šangaj dolazi na tvoju lokaciju, pali roštilj i sprema klopu na licu mesta, pred tvojom ekipom.</p>
+      <div class="gp-actions" data-reveal>
+        <a class="gp-btn" href="kuvanje-na-gajbi/index.html">Saznaj više</a>
+        <a class="gp-btn ghost" href="kuvanje-na-gajbi/index.html#upit">Pošalji upit</a>
+      </div>
+    </div>
+    <a class="gp-logo" href="kuvanje-na-gajbi/index.html" aria-label="Kuvanje na gajbi" data-reveal>
+      <img src="assets/gajba/logo-badge.png" alt="Kuvanje na gajbi, by Sangaj Street Food" loading="lazy" width="420" height="420">
+    </a>
   </div>
 </section>
 
